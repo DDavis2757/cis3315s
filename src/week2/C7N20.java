@@ -1,5 +1,7 @@
 package week2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author ddavi
@@ -31,7 +33,12 @@ public class C7N20 {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1, 10, 2, 9, 3, 8, 4, 7, 5, 6};
+        Scanner sc = new Scanner(System.in);
+        int[] nums = new int[10];
+        System.out.println("Enter 10 numbers: ");
+        for(int i=0; i<10; i++){
+            nums[i]=sc.nextInt();
+        }
         display(nums);
         sort(nums);
         display(nums);
