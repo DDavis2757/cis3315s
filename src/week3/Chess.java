@@ -32,9 +32,5 @@ public class Chess {
             {'R', 'H', 'B', 'K', 'Q', 'B', 'H', 'R'}
         };
         display(board);
-        board[0][1] = '-';
-        board[2][2]='h';
-        System.out.println("");
-        display(board);
     }
 }
